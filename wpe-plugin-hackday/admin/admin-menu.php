@@ -22,4 +22,4 @@ function wpe_hack_plugin_sublevel_menu() {
 		'wpe_plugin_hackday_display_settings_page'
 	);
 }
-add_action( 'admin_menu', 'wpe_hack_plugin_sublevel_menu' );
+add_action( 'admin_menu', __NAMESPACE__ . 'wpe_hack_plugin_sublevel_menu' );
