@@ -1,5 +1,10 @@
 <?php
 
+function wpe_plugin_hackday_display_settings_page() {
+
+    include(dirname( __FILE__ ) . "/admin-ui.php");
+}
+
 // add sub-level administrative menu
 function wpe_hack_plugin_sublevel_menu() {
 	/*
@@ -23,3 +28,4 @@ function wpe_hack_plugin_sublevel_menu() {
 	);
 }
 add_action( 'admin_menu', 'wpe_hack_plugin_sublevel_menu' );
+

@@ -11,8 +11,6 @@
 namespace wpengine\hack_plugin;
 
 if ( is_admin() ) {
-    include_once plugin_dir_path( __FILE__ ) . 'admin/admin-menu.php';
+    include_once plugin_dir_path( __FILE__ ) . 'wpe-plugin-hack/admin/admin-menu.php';
 }
 
-function wpe_plugin_hackday_display_settings_page() {
-}

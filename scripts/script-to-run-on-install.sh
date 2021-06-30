@@ -1,12 +1,12 @@
 #!/bin/bash
 set -e
-rm -Rf wpe-wp-sign-on-plugin
+rm -Rf wpe-plugin-hack
 cd "/nas/content/live/$1/wp-content/mu-plugins"
-rm -f wpe-wp-sign-on-plugin.php
-rm -Rf wpe-wp-sign-on-plugin
+rm -f wpe-plugin-hack.php
+rm -Rf wpe-plugin-hack
 cd -
 
 unzip plugin.zip
-mv wpe-wp-sign-on-plugin/* "/nas/content/live/$1/wp-content/mu-plugins"
+mv wpe-plugin-hack/* "/nas/content/live/$1/wp-content/mu-plugins"
 
 echo "!!finished installing on $1!!!"
